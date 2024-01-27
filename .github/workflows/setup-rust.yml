@@ -31,7 +31,7 @@ jobs:
 
         - name: Initialize Rust project
           if: steps.check.outputs.Cargo_lock_exists == 'false'
-          run: cargo new chrome-ext-rs --bin
+          run: cargo init --name chrome-ext
 
         - name: Build
           run: cargo build --release
