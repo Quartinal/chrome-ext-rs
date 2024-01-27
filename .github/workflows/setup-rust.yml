@@ -2,11 +2,10 @@ name: Rust and Cargo Setup
 
 on:
     push:
-        branches: [ main ]
-        paths: [ '.' ]
-    pull_request:
-        branches: [ main ]
-        paths: [ '.' ]
+        branches:
+            - main
+        paths:
+            - '.'
 
 jobs:
     build:
