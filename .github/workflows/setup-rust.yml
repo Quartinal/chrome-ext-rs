@@ -3,10 +3,10 @@ name: Rust and Cargo Setup
 on:
     push:
         branches: [ main ]
-        paths: [ 'Cargo.toml' ]
+        paths: [ '.' ]
     pull_request:
         branches: [ main ]
-        paths: [ 'Cargo.toml' ]
+        paths: [ '.' ]
 
 jobs:
     build:
